@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="jquery.min.js" ></script>
+	</head>
+	<body>
+		<script>
+			$.ajax({
+				type:"post",
+				url:"http://localhost:4000/limit/",
+				data:{
+					fenlei:1
+				}
+				success:(e)=>{
+					console.log(e)
+				}
+			});
+		</script>
+	</body>
+</html>
